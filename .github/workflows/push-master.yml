@@ -12,9 +12,9 @@ env:
 
 jobs:
 
-######################
+
 ###### Linux #########
-######################
+
 
   Linux:
     name: ${{ matrix.architecture }}/${{ matrix.distroName}}:${{ matrix.distroVersion }}
@@ -95,9 +95,9 @@ jobs:
             deploy/Hyper*.zst
             deploy/Hyper*.rpm
 
-######################
+
 ######## macOS #######
-######################
+
 
   macOS:
     name: ${{ matrix.JOB_NAME }}
@@ -160,9 +160,8 @@ jobs:
             name: Apple_macOS_${{ matrix.NICE_NAME }}_DMG_installer
             path: build/Hyper*.dmg
 
-######################
+
 ###### Windows #######
-######################
 
   windows:
     name: Windows

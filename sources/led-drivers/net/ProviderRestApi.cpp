@@ -2,7 +2,7 @@
 *
 *  MIT License
 *
-*  Copyright (c) 2020-2025 awawa-dev
+*  Copyright (c) 2020-2026 awawa-dev
 *
 *  Project homesite: https://github.com/awawa-dev/HyperHDR
 *
@@ -49,6 +49,8 @@ ProviderRestApi::ProviderRestApi(const QString& host, int port, const QString& b
 	, _port(port)
 {
 	qRegisterMetaType<std::shared_ptr<httpResponse>>("std::shared_ptr<httpResponse>");
+	qRegisterMetaType<ProviderRestApi*>("ProviderRestApi*");
+	qRegisterMetaType<QNetworkAccessManager::Operation>("QNetworkAccessManager::Operation");	
 
 	_apiUrl.setScheme(_scheme);
 	_apiUrl.setHost(host);

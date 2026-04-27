@@ -4,7 +4,7 @@
 *
 *  MIT License
 *
-*  Copyright (c) 2020-2025 awawa-dev
+*  Copyright (c) 2020-2026 awawa-dev
 *
 *  Project homesite: https://github.com/awawa-dev/HyperHDR
 *
@@ -35,7 +35,7 @@
 class DiscoveryRecord
 {
 public:
-	enum Service { Unknown = 0, HyperHDR, WLED, PhilipsHue, HomeAssistant, Pico, ESP32_S2, ESP, SerialPort, REFRESH_ALL };
+	enum Service { Unknown = 0, HyperHDR, Hyperk, WLED, PhilipsHue, HomeAssistant, Pico, ESP32_S2, ESP, SerialPort, REFRESH_ALL };
 
 	Service type;
 	QString hostName;
